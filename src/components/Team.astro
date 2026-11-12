@@ -1,9 +1,8 @@
 ---
-import img1 from "../assets/integrante-1.png";
-import img2 from "../assets/integrante-2.png";
-import img3 from "../assets/integrante-3.png";
-import img4 from "../assets/integrante-4.png";
-import img5 from "../assets/integrante-5.png";
+import imgCamila from "../assets/integrante-camila.jpg";
+import imgDidier from "../assets/integrante-didier.png";
+import imgOmar from "../assets/integrante-omar.jpg";
+import imgLeo from "../assets/integrante-leo.jpg";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -11,39 +10,32 @@ const t = useTranslations(lang);
 
 const team = [
   {
-    name: "Coronel Espinoza Farid Sebastian",
-    code: "u202214567",
+    name: "Loli Ramirez Camila Cristina",
+    code: "u202110385",
     roleKey: "team.role.1",
     color: "bg-blue-100 text-blue-600 border-blue-200",
-    image: img1,
-  },
-  {
-    name: "Diaz Quispe Matias Sebastian",
-    code: "u202315891",
-    roleKey: "team.role.2",
-    color: "bg-green-100 text-green-600 border-green-200",
-    image: img3,
-  },
-  {
-    name: "Juarez Leon Nicolas Emilio Walter",
-    code: "u202112345",
-    roleKey: "team.role.3",
-    color: "bg-purple-100 text-purple-600 border-purple-200",
-    image: img2,
+    image: imgCamila,
   },
   {
     name: "Meza Solórzano Didier Sebastian",
-    code: "u202220192",
-    roleKey: "team.role.4",
+    code: "u202319950",
+    roleKey: "team.role.2",
     color: "bg-orange-100 text-orange-600 border-orange-200",
-    image: img4,
+    image: imgDidier,
   },
   {
-    name: "Torres Apolinario Giovany Smith",
-    code: "u202118745",
-    roleKey: "team.role.5",
-    color: "bg-teal-100 text-teal-600 border-teal-200",
-    image: img5,
+    name: "Rivera Ticllacuri Omar Harold",
+    code: "u202214214",
+    roleKey: "team.role.3",
+    color: "bg-green-100 text-green-600 border-green-200",
+    image: imgOmar,
+  },
+  {
+    name: "Solis Solis Leonardo José",
+    code: "u20211g163",
+    roleKey: "team.role.4",
+    color: "bg-purple-100 text-purple-600 border-purple-200",
+    image: imgLeo,
   },
 ];
 ---
@@ -70,7 +62,7 @@ const team = [
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
       {team.map((member, index) => (
       <div class="flex flex-col items-center text-center reveal group card-hover p-6" style={`transition-delay: ${index * 100}ms;`}>
         <div class={`w-24 h-24 rounded-2xl flex items-center justify-center overflow-hidden mb-6 shadow-sm border group-hover:scale-110 transition-transform duration-300 ${member.color}`}>
