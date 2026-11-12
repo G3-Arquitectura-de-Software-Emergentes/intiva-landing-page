@@ -121,7 +121,7 @@ export const ui = {
     'plans.premium.3': 'Advanced investment tracking',
     'plans.premium.4': 'Real-time market insights',
     'plans.premium.5': 'Priority support & export tools',
-    'plans.premium.6': 'Intiva AI agent: monthly plan and financial assistant',
+    'plans.ai': 'Organize your expenses and build your monthly plan with AI',
     'plans.googlePlay': 'Available on Google Play for Android',
 
     // Trust & Security
@@ -394,7 +394,7 @@ export const ui = {
     'plans.premium.3': 'Seguimiento avanzado de inversiones',
     'plans.premium.4': 'Insights de mercado en tiempo real',
     'plans.premium.5': 'Soporte prioritario y exportación de datos',
-    'plans.premium.6': 'Agente Intiva IA: plan mensual y asistente financiero',
+    'plans.ai': 'Organiza tus gastos y arma tu plan mensual con IA',
     'plans.googlePlay': 'Disponible en Google Play para Android',
 
     // Trust & Security

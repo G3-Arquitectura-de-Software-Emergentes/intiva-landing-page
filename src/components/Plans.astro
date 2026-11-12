@@ -59,7 +59,7 @@ const t = useTranslations(lang);
           {t('plans.premium.note')}
         </p>
         <ul class="space-y-4">
-          {['1','2','3','4','5','6'].map((i) => (
+          {['1','2','3','4','5'].map((i) => (
           <li class="flex items-start gap-3">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-primary shrink-0"><path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clip-rule="evenodd" /></svg>
             <span class="text-dark/80 font-medium">{t(`plans.premium.${i}`)}</span>
@@ -69,7 +69,11 @@ const t = useTranslations(lang);
       </div>
     </div>
     
-    <div class="mt-16 text-center flex flex-col items-center justify-center gap-2 reveal">
+    <div class="mt-16 text-center flex flex-col items-center justify-center gap-4 reveal">
+      <a href={"#" + t("section.ai")} class="flex items-center gap-2 bg-primary/5 px-5 py-2.5 rounded-full border border-primary/15 hover:bg-primary/10 transition-colors">
+        <span class="w-6 h-6 rounded-full bg-linear-to-br from-primary-light to-primary-dark flex items-center justify-center text-accent text-xs">✦</span>
+        <span class="text-sm font-semibold text-primary">{t('plans.ai')}</span>
+      </a>
       <div class="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full border border-gray-200">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-dark"><path d="M4.5 3.324v17.352c0 .59.436 1.096 1.024 1.15.545.05.992-.224 1.258-.654l7.143-11.536L4.5 3.324Zm14.28 7.5l-6.074 3.797 7.042-11.37a1.08 1.08 0 0 1 .536.88v12.738a1.08 1.08 0 0 1-.536.88l-7.042-11.371 6.074-3.796Z" /></svg>
         <span class="text-sm font-medium text-dark">{t('plans.googlePlay')}</span>
