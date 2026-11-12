@@ -72,7 +72,7 @@ const t = useTranslations(lang);
     <div class="mt-16 text-center flex flex-col items-center justify-center gap-4 reveal">
       <a href={"#" + t("section.ai")} class="flex items-center gap-2 bg-primary/5 px-5 py-2.5 rounded-full border border-primary/15 hover:bg-primary/10 transition-colors">
         <span class="w-6 h-6 rounded-full bg-linear-to-br from-primary-light to-primary-dark flex items-center justify-center text-accent text-xs">✦</span>
-        <span class="text-sm font-semibold text-primary">{t('plans.ai')}</span>
+        <span class="text-sm text-primary text-left"><span class="font-semibold">{t('plans.ai')}</span> <span class="text-primary/70">{t('plans.ai.note')}</span></span>
       </a>
       <div class="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full border border-gray-200">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-dark"><path d="M4.5 3.324v17.352c0 .59.436 1.096 1.024 1.15.545.05.992-.224 1.258-.654l7.143-11.536L4.5 3.324Zm14.28 7.5l-6.074 3.797 7.042-11.37a1.08 1.08 0 0 1 .536.88v12.738a1.08 1.08 0 0 1-.536.88l-7.042-11.371 6.074-3.796Z" /></svg>
